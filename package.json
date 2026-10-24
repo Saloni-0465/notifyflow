@@ -1,0 +1,13 @@
+{
+  "name": "notifyflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Queue-based notification delivery with retries and idempotency",
+  "workspaces": ["api", "worker"],
+  "scripts": {
+    "start:api": "npm --workspace api start",
+    "start:worker": "npm --workspace worker start",
+    "dev:api": "npm --workspace api run dev",
+    "dev:worker": "npm --workspace worker run dev"
+  }
+}
